@@ -1,0 +1,10 @@
+{
+"resources":[
+    {"name":"PageEndUI_img","type":"image","url":"assets/ui/page/PageEndUI_190426115046.png"},
+    {"name":"PageEndUI_json","type":"json","url":"assets/ui/page/PageEndUI_190426115046.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=190426115046"}
+],
+"groups":[
+    {"name":"page_PageEndUI","keys":"PageEndUI_img,PageEndUI_json,loadingBg"}
+]
+}

@@ -1,0 +1,12 @@
+{
+"resources":[
+    {"name":"PageGameUI_img","type":"image","url":"assets/ui/page/PageGameUI_190426155031.png"},
+    {"name":"PageGameUI_json","type":"json","url":"assets/ui/page/PageGameUI_190426155031.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=190426155031"},
+    {"name":"gameBg","type":"image","url":"assets/ui/page/gameBg.jpg?ver=190426155031"},
+    {"name":"role","type":"image","url":"assets/ui/page/role.png?ver=190426155031"}
+],
+"groups":[
+    {"name":"page_PageGameUI","keys":"PageGameUI_img,PageGameUI_json,loadingBg,gameBg,role"}
+]
+}

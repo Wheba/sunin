@@ -1,0 +1,148 @@
+<ui>
+  <window name="PageEndUI" desc="" ui="view" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="clip" value="true" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="750" type="number"/>
+    <property name="height" value="1206" type="number"/>
+    <property name="topEnabled" value="true" type="boolean"/>
+    <property name="bottomEnabled" value="true" type="boolean"/>
+    <property name="leftEnabled" value="true" type="boolean"/>
+    <property name="rightEnabled" value="true" type="boolean"/>
+    <window name="imgBg" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\loadingBg.jpg" type="bitmapdata"/>
+      <property name="y" value="-150" type="number"/>
+      <property name="width" value="750" type="number"/>
+      <property name="height" value="1506" type="number"/>
+    </window>
+    <window name="groupContent" desc="" type="com.easyegret.ui.Group" template="false">
+      <property name="showBg" value="false" type="boolean"/>
+      <property name="border" value="false" type="boolean"/>
+      <property name="width" value="750" type="number"/>
+      <property name="height" value="1206" type="number"/>
+      <property name="horizontalEnabled" value="true" type="boolean"/>
+      <property name="verticalEnabled" value="true" type="boolean"/>
+      <window name="groupFrame" desc="" type="com.easyegret.ui.Group" template="false">
+        <property name="showBg" value="false" type="boolean"/>
+        <property name="border" value="false" type="boolean"/>
+        <property name="x" value="139.5" type="number"/>
+        <property name="y" value="105" type="number"/>
+        <property name="width" value="471" type="number"/>
+        <property name="height" value="305" type="number"/>
+        <window name="imgFrame" desc="" type="com.easyegret.ui.Image" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\end_Frame.png" type="bitmapdata"/>
+          <property name="width" value="471" type="number"/>
+          <property name="height" value="305" type="number"/>
+        </window>
+        <window name="labelImgScore" desc="" type="com.easyegret.ui.LabelImage" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\labelImg1.png" type="bitmapdata"/>
+          <property name="rollingZoomAlign" value="center" type="array_string"/>
+          <property name="width" value="330" type="number"/>
+          <property name="height" value="100" type="number"/>
+          <property name="x" value="70.5" type="number"/>
+          <property name="y" value="112" type="number"/>
+          <property name="showBg" value="false" type="boolean"/>
+          <property name="border" value="false" type="boolean"/>
+          <property name="hAlign" value="center" type="array_string"/>
+        </window>
+        <window name="imgRank" desc="" type="com.easyegret.ui.Image" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\end_Rank.png" type="bitmapdata"/>
+          <property name="x" value="53.5" type="number"/>
+          <property name="y" value="239" type="number"/>
+          <property name="width" value="364" type="number"/>
+          <property name="height" value="40" type="number"/>
+        </window>
+        <window name="labelImgRank" desc="" type="com.easyegret.ui.LabelImage" template="false">
+          <property name="text" value="1" type="string"/>
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\labelImg2.png" type="bitmapdata"/>
+          <property name="rollingZoomAlign" value="center" type="array_string"/>
+          <property name="width" value="130" type="number"/>
+          <property name="height" value="50" type="number"/>
+          <property name="x" value="249.5" type="number"/>
+          <property name="y" value="232" type="number"/>
+          <property name="showBg" value="false" type="boolean"/>
+          <property name="border" value="false" type="boolean"/>
+          <property name="hAlign" value="center" type="array_string"/>
+        </window>
+      </window>
+      <window name="imgRankTishi" desc="" type="com.easyegret.ui.Image" template="false">
+        <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\end_Txt.png" type="bitmapdata"/>
+        <property name="x" value="174.5" type="number"/>
+        <property name="y" value="438" type="number"/>
+        <property name="width" value="401" type="number"/>
+        <property name="height" value="84" type="number"/>
+      </window>
+      <window name="groupBtn" desc="" type="com.easyegret.ui.Group" template="false">
+        <property name="showBg" value="false" type="boolean"/>
+        <property name="border" value="false" type="boolean"/>
+        <property name="x" value="325" type="number"/>
+        <property name="y" value="1106" type="number"/>
+        <property name="visible" value="false" type="boolean"/>
+        <window name="btnRank" desc="" type="com.easyegret.ui.Button" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_Rank.png" type="bitmapdata"/>
+          <property name="width" value="272" type="number"/>
+          <property name="height" value="82" type="number"/>
+          <property name="x" value="-86" type="number"/>
+          <property name="y" value="-118" type="number"/>
+        </window>
+        <window name="btnAgain" desc="" type="com.easyegret.ui.Button" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_Again.png" type="bitmapdata"/>
+          <property name="width" value="272" type="number"/>
+          <property name="height" value="82" type="number"/>
+          <property name="x" value="-86" type="number"/>
+          <property name="y" value="-434" type="number"/>
+        </window>
+        <window name="btnShare" desc="" type="com.easyegret.ui.Button" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_Share2.png" type="bitmapdata"/>
+          <property name="width" value="271" type="number"/>
+          <property name="height" value="82" type="number"/>
+          <property name="x" value="-85.5" type="number"/>
+          <property name="y" value="-279" type="number"/>
+        </window>
+      </window>
+      <window name="groupCoupon" desc="" type="com.easyegret.ui.Group" template="false">
+        <property name="showBg" value="false" type="boolean"/>
+        <property name="border" value="false" type="boolean"/>
+        <property name="x" value="325" type="number"/>
+        <property name="y" value="1106" type="number"/>
+        <window name="imgCoupon" desc="" type="com.easyegret.ui.Image" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\Coupon0.png" type="bitmapdata"/>
+          <property name="x" value="-185.5" type="number"/>
+          <property name="y" value="-485.5" type="number"/>
+          <property name="width" value="471" type="number"/>
+          <property name="height" value="221" type="number"/>
+        </window>
+        <window name="btnGetCoupon" desc="" type="com.easyegret.ui.Button" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_GetCoupon.png" type="bitmapdata"/>
+          <property name="width" value="350" type="number"/>
+          <property name="height" value="150" type="number"/>
+          <property name="x" value="-125" type="number"/>
+          <property name="y" value="-79" type="number"/>
+        </window>
+        <window name="btnSquare" desc="" type="com.easyegret.ui.Button" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_Square.png" type="bitmapdata"/>
+          <property name="label" value="点击选择您所属的广场" type="string"/>
+          <property name="labelColor" value="0xffffff" type="int16"/>
+          <property name="fontSize" value="35" type="int"/>
+          <property name="width" value="471" type="number"/>
+          <property name="height" value="91" type="number"/>
+          <property name="x" value="-185.5" type="number"/>
+          <property name="y" value="-200" type="number"/>
+        </window>
+      </window>
+    </window>
+    <window name="tempMusic" desc="" path="page/TempMusic.xml" type="CLASS" template="true">
+      <property name="x" value="617" type="number"/>
+      <property name="y" value="1074" type="number"/>
+      <property name="bottomEnabled" value="true" type="boolean"/>
+      <property name="bottom" value="10" type="number"/>
+      <property name="rightEnabled" value="true" type="boolean"/>
+      <property name="right" value="10" type="number"/>
+    </window>
+  </window>
+  <resources>
+    <res id="loadingBg" merger="false">E:\items\2019\UI\375-苏宁游戏\切图\loadingBg.jpg</res>
+    <res id="btn_GetCoupon">E:\items\2019\UI\375-苏宁游戏\切图\btn_GetCoupon.png</res>
+    <res id="btn_GetCoupon0">E:\items\2019\UI\375-苏宁游戏\切图\btn_GetCoupon0.png</res>
+  </resources>
+</ui>

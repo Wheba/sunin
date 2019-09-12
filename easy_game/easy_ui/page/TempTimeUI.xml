@@ -1,0 +1,38 @@
+<ui>
+  <window name="TempTimeUI" desc="" ui="template" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="284" type="number"/>
+    <property name="height" value="56" type="number"/>
+    <window name="imgFrame" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\game_Frame.png" type="bitmapdata"/>
+      <property name="width" value="284" type="number"/>
+      <property name="height" value="56" type="number"/>
+    </window>
+    <window name="imgTime" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\game_Time.png" type="bitmapdata"/>
+      <property name="x" value="30" type="number"/>
+      <property name="y" value="20" type="number"/>
+      <property name="width" value="75" type="number"/>
+      <property name="height" value="21" type="number"/>
+    </window>
+    <window name="labelTime" desc="" type="com.easyegret.ui.Label" template="false">
+      <property name="text" value="00 : 00" type="string"/>
+      <property name="fontSize" value="32" type="int"/>
+      <property name="color" value="0xffffff" type="int16"/>
+      <property name="hAlign" value="center" type="array_string"/>
+      <property name="autoSize" value="false" type="boolean"/>
+      <property name="width" value="120" type="number"/>
+      <property name="height" value="40" type="number"/>
+      <property name="x" value="139" type="number"/>
+      <property name="y" value="10" type="number"/>
+      <property name="rightEnabled" value="true" type="boolean"/>
+      <property name="right" value="25" type="number"/>
+      <property name="showBg" value="false" type="boolean"/>
+      <property name="border" value="false" type="boolean"/>
+    </window>
+  </window>
+  <resources>
+    <res id="game_Frame" merger="false">E:\items\2019\UI\375-苏宁游戏\切图\game_Frame.png</res>
+  </resources>
+</ui>

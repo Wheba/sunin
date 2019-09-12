@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>苏宁H5游戏</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="auto"
+         data-scale-mode="showAll"
+         data-frame-rate="30"
+         data-content-width="750"
+         data-content-height="1206"
+         data-multi-fingered="2"
+         data-show-fps="true" data-show-log="true"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <img id="musicBtn" src="resource/assets/ui/music0.png" style="position: fixed;bottom: 1.5vw;right: 1.5vw;width: 16vw;display: none" onclick="changeMusicState()">
+    <audio id="bg"><source src="resource/assets/sound/bg1.mp3"  type="audio/mpeg"></audio>
+	<script src="jquery-3.0.0.min.js"></script>
+    <script src="http://static.jiyou-tech.com/2019/375/member07.js"></script>
+<script>
+    var latitude=null,longitude=null;
+var apiUrl="//www.jiyou-tech.com/2019/375/php";
+//判断是否是微信浏览器的函数
+function isWeiXin(){
+    //window.navigator.userAgent属性包含了浏览器类型、版本、操作系统类型、浏览器引擎类型等信息，这个属性可以用来判断浏览器类型
+    var ua = window.navigator.userAgent.toLowerCase();
+    //通过正则表达式匹配ua中是否含有MicroMessenger字符串
+    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+var loadScript = function (list, callback) {
+    var loaded = 0;
+    var loadNext = function () {
+        loadSingleScript(list[loaded], function () {
+            loaded++;
+            if (loaded >= list.length) {
+                callback();
+            }
+            else {
+                loadNext();
+            }
+        })
+    };
+    loadNext();
+};
+
+var loadSingleScript = function (src, callback) {
+    var s = document.createElement('script');
+    s.async = false;
+    s.src = src;
+    s.addEventListener('load', function () {
+        s.parentNode.removeChild(s);
+        s.removeEventListener('load', arguments.callee, false);
+        callback();
+    }, false);
+    document.body.appendChild(s);
+};
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+xhr.addEventListener("load", function () {
+    var manifest = JSON.parse(xhr.response);
+    var list = manifest.initial.concat(manifest.game);
+    loadScript(list, function () {
+        /**
+         * {
+         * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+         * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+         * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+         * "calculateCanvasScaleFactor": //a function return canvas scale factor
+         * }
+         **/
+        egret.sys.screenAdapter = new easy.EasyGameFullScreen();
+    egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+            var backingStore = context.backingStorePixelRatio ||
+                context.webkitBackingStorePixelRatio ||
+                context.mozBackingStorePixelRatio ||
+                context.msBackingStorePixelRatio ||
+                context.oBackingStorePixelRatio ||
+                context.backingStorePixelRatio || 1;
+            return (window.devicePixelRatio || 1) / backingStore;
+        }});
+    });
+});
+xhr.send(null);
+</script>
+<script>
+    var showLog=true;
+    var musicBtn=document.getElementById("musicBtn");
+    var music = document.getElementById('bg');
+    var musicLoadEnd=true,musicState=false;
+    music.loop=true;
+    document.addEventListener('DOMContentLoaded', function () {
+        //music.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            //music.play();
+        }, false);
+    });
+    music.addEventListener("play",function () {
+        musicLoadEnd=true;
+        musicState=true;
+        musicBtn.src="resource/assets/ui/music1.png";
+        try{
+            easy.MyEvent.sendEvent("changeMusicState");
+        }catch(e){
+        }
+    },false);
+    music.addEventListener("pause",function () {
+        musicState=false;
+        musicBtn.src="resource/assets/ui/music0.png";
+        easy.MyEvent.sendEvent("changeMusicState");
+    },false);
+    function changeMusicState() {
+        if(musicState){//播放中
+            music.pause();
+        }else{
+            music.play();
+        }
+    }
+    function changeMusicSrc(code){
+        music.src="resource/assets/sound/bg"+code+".mp3";
+        if(musicState){
+            music.play(0);
+        }
+    }
+    function musicBtnShow(){
+        musicBtn.style.display="block";
+    }
+    function musicBtnHidden(){
+        musicBtn.style.display="none";
+    }
+    H5GameApi.initSettings({
+        'pfsUrl' :'http://pfs.suning.com/pfs-web',
+        'gameUrl' : 'http://www.jiyou-tech.com/2019/375/',
+        'wxAuthUrl' : 'http://mobts.suning.com/suning-web-mobile/weixin/auth.htm?weixinRedirectUrl='
+    });
+    function callMemberNo(obj) {
+        var parm="调用苏宁获取会员接口,标识码["+suning.GameData.userRandomCode+"],广场ID="+suning.GameData.plazaId;
+        if(suning.GameData.showLog)easy.HttpUtil.getData(suning.GameData.apiUrl+"/check_log.php","url="+parm,function () {},this);
+        H5GameApi.getMemberNo(obj);
+    }
+    function replyMemberNo(res) {
+        var json=JSON.parse(res);
+        console.log(json);
+        suning.GameData.memberNo=json.memberNo;
+        easy.MyEvent.sendEvent("openGetCouponBtn");
+        var parm="苏宁登陆回调，标识码["+suning.GameData.userRandomCode+"],会员ID="+suning.GameData.memberNo+"广场ID="+suning.GameData.plazaId;
+        if(suning.GameData.showLog)easy.HttpUtil.getData(suning.GameData.apiUrl+"/check_log.php","url="+parm,function () {},this);
+        if(egret.getOption("resource")){//是回调
+        }else{
+            suning.GameData.getCoupon();
+        }
+    }
+    function callCoupon(obj) {
+        var parm="调用苏宁发券接口,标识码["+suning.GameData.userRandomCode+"],会员ID="+suning.GameData.memberNo+"广场ID="+suning.GameData.plazaId+"券ID="+suning.GameData.resourceId;
+        if(suning.GameData.showLog)easy.HttpUtil.getData(suning.GameData.apiUrl+"/check_log.php","url="+parm,function () {},this);
+        H5GameApi.sendCoupon(obj);
+    }
+    function  replyCoupon(res) {
+        var json=JSON.parse(res);
+        if(json.isSuccess=="1"){//成功
+            var parm="苏宁发券接口回调，回复成功,标识码["+suning.GameData.userRandomCode+"],会员ID="+suning.GameData.memberNo+"广场ID="+suning.GameData.plazaId+"券ID="+suning.GameData.resourceId;
+            if(suning.GameData.showLog)easy.HttpUtil.getData(suning.GameData.apiUrl+"/check_log.php","url="+parm,function () {},this);
+            suning.GameData.getCouponSuccess();
+        }else{
+            var parm="苏宁发券接口回调，回复失败-"+json.errorMsg+",标识码["+suning.GameData.userRandomCode+"],会员ID="+suning.GameData.memberNo+"广场ID="+suning.GameData.plazaId+"券ID="+suning.GameData.resourceId;
+            if(suning.GameData.showLog)easy.HttpUtil.getData(suning.GameData.apiUrl+"/check_log.php","url="+parm,function () {},this);
+            easy.MyEvent.sendEvent("openGetCouponBtn");
+            easy.PopupManager.show(suning.WinSendCouponEndWin);
+        }
+    }
+    function openCouponBag(obj) {
+        var parm="苏宁调用打开卡包接口,标识码["+suning.GameData.userRandomCode+"],会员ID="+suning.GameData.memberNo+"广场ID="+suning.GameData.plazaId;
+        if(suning.GameData.showLog)easy.HttpUtil.getData(suning.GameData.apiUrl+"/check_log.php","url="+parm,function () {},this);
+        H5GameApi.openCouponBag(obj);
+    }
+    function downloadApp(obj) {
+        var parm="苏宁调用下载APP接口,标识码["+suning.GameData.userRandomCode+"],会员ID="+suning.GameData.memberNo+"广场ID="+suning.GameData.plazaId;
+        if(suning.GameData.showLog)easy.HttpUtil.getData(suning.GameData.apiUrl+"/check_log.php","url="+parm,function () {},this);
+        H5GameApi.downloadApp(obj);
+    }
+    function shareWeChat(obj) {
+        var parm="苏宁APP分享接口,标识码["+suning.GameData.userRandomCode+"],会员ID="+suning.GameData.memberNo+"广场ID="+suning.GameData.plazaId;
+        if(suning.GameData.showLog)easy.HttpUtil.getData(suning.GameData.apiUrl+"/check_log.php","url="+parm,function () {},this);
+        H5GameApi.shareWeChat(obj);
+        if(suning.GameData.memberNo!=""){//有会员ID
+            easy.HttpUtil.postData(suning.GameData.apiUrl+"/share_log.php","user_id="+suning.GameData.memberNo,function () {},this);
+        }
+    }
+    function getFlatternDistance(lat1,lng1,lat2,lng2){
+        var getRad=function (d) {
+            return d*Math.PI/180.0;
+        };
+        var f = getRad((lat1 + lat2)/2);
+        var g = getRad((lat1 - lat2)/2);
+        var l = getRad((lng1 - lng2)/2);
+        var sg = Math.sin(g);
+        var sl = Math.sin(l);
+        var sf = Math.sin(f);
+        var s,c,w,r,d,h1,h2;
+        var a = 6378137.0;
+        var fl = 1/298.257;
+        sg = sg*sg;
+        sl = sl*sl;
+        sf = sf*sf;
+        s = sg*(1-sl) + (1-sf)*sl;
+        c = (1-sg)*(1-sl) + sf*sl;
+        w = Math.atan(Math.sqrt(s/c));
+        r = Math.sqrt(s*c)/w;
+        d = 2*w*a;
+        h1 = (3*r -1)/2/c;
+        h2 = (3*r +1)/2/s;
+        return d*(1 + fl*(h1*sf*(1-sg) - h2*(1-sf)*sg));
+    }
+</script>
+<script>
+    function addNums(parm) {//百度统计
+        //_hmt.push(parm);
+    }
+    function addEnterNums(parm) {//统计进入游戏次数
+        //_hmt.push(parm);
+    }
+    function addGameNums() {//统计游戏次数
+        //_hmt.push(['_trackEvent', "游戏", "开始"]);
+    }
+    function addCouponNums() {//统计领取优惠券张数
+        console.log("统计领取优惠券张数");
+        //_hmt.push(['_trackEvent', "优惠券", "领取"]);
+    }
+    function addNumbers() {//统计领取优惠券人数
+        console.log("统计领取优惠券人数");
+        //_hmt.push(['_trackEvent', "用户", "领取"]);
+    }
+    function addShareEnterNum(type) {//统计分享进入次数
+        console.log("统计分享进入次数");
+        // _hmt.push(['_trackEvent', "分享进入方式", type]);
+    }
+</script>
+</body>
+
+</html>

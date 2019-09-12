@@ -1,0 +1,37 @@
+<ui>
+  <window name="WinSendCouponEndUI" desc="" ui="win" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="470" type="number"/>
+    <property name="height" value="291" type="number"/>
+    <window name="imgBg" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\loadingBg.jpg" type="bitmapdata"/>
+      <property name="x" value="-140" type="number"/>
+      <property name="y" value="-607.5" type="number"/>
+      <property name="width" value="750" type="number"/>
+      <property name="height" value="1506" type="number"/>
+    </window>
+    <window name="imgFrame" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\frame4.png" type="bitmapdata"/>
+      <property name="width" value="470" type="number"/>
+      <property name="height" value="291" type="number"/>
+    </window>
+    <window name="imgTxt" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\7_1.png" type="bitmapdata"/>
+      <property name="x" value="32" type="number"/>
+      <property name="y" value="92.5" type="number"/>
+      <property name="width" value="406" type="number"/>
+      <property name="height" value="106" type="number"/>
+    </window>
+    <window name="btnAgain" desc="" type="com.easyegret.ui.Button" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_Again2.png" type="bitmapdata"/>
+      <property name="width" value="222" type="number"/>
+      <property name="height" value="67" type="number"/>
+      <property name="x" value="124.5" type="number"/>
+      <property name="y" value="433" type="number"/>
+    </window>
+  </window>
+  <resources>
+    <res id="frame3" merger="false">E:\items\2019\UI\375-苏宁游戏\切图\frame3.png</res>
+  </resources>
+</ui>

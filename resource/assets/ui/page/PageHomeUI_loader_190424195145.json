@@ -1,0 +1,11 @@
+{
+"resources":[
+    {"name":"PageHomeUI_img","type":"image","url":"assets/ui/page/PageHomeUI_190424195145.png"},
+    {"name":"PageHomeUI_json","type":"json","url":"assets/ui/page/PageHomeUI_190424195145.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=190424195145"},
+    {"name":"role","type":"image","url":"assets/ui/page/role.png?ver=190424195145"}
+],
+"groups":[
+    {"name":"page_PageHomeUI","keys":"PageHomeUI_img,PageHomeUI_json,loadingBg,role"}
+]
+}

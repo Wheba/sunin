@@ -1,0 +1,21 @@
+<ui>
+  <window name="TempEnergyBallUI" desc="" ui="template" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="140" type="number"/>
+    <property name="height" value="140" type="number"/>
+    <window name="imgBall" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="x" value="-37.5" type="number"/>
+      <property name="y" value="-37.5" type="number"/>
+      <property name="width" value="215" type="number"/>
+      <property name="height" value="215" type="number"/>
+    </window>
+    <window name="imgTxt" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt1_1.png" type="bitmapdata"/>
+      <property name="x" value="17" type="number"/>
+      <property name="y" value="17" type="number"/>
+      <property name="height" value="104" type="number"/>
+    </window>
+  </window>
+  <resources/>
+</ui>

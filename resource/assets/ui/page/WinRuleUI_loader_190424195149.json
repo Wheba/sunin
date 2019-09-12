@@ -1,0 +1,12 @@
+{
+"resources":[
+    {"name":"WinRuleUI_img","type":"image","url":"assets/ui/page/WinRuleUI_190424195149.png"},
+    {"name":"WinRuleUI_json","type":"json","url":"assets/ui/page/WinRuleUI_190424195149.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=190424195149"},
+    {"name":"frame1","type":"image","url":"assets/ui/page/frame1.png?ver=190424195149"},
+    {"name":"btn_Back","type":"image","url":"assets/ui/page/btn_Back.png?ver=190424195149"}
+],
+"groups":[
+    {"name":"page_WinRuleUI","keys":"WinRuleUI_img,WinRuleUI_json,loadingBg,frame1,btn_Back"}
+]
+}

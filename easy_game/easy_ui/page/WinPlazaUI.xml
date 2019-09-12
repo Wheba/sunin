@@ -1,0 +1,62 @@
+<ui>
+  <window name="WinPlazaUI" desc="" ui="win" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="471" type="number"/>
+    <property name="height" value="478" type="number"/>
+    <window name="groupFrame" desc="" type="com.easyegret.ui.Group" template="false">
+      <property name="showBg" value="false" type="boolean"/>
+      <property name="border" value="false" type="boolean"/>
+      <property name="width" value="471" type="number"/>
+      <property name="height" value="453" type="number"/>
+      <window name="imgFrame" desc="" type="com.easyegret.ui.Image" template="false">
+        <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\frame3.png" type="bitmapdata"/>
+        <property name="width" value="471" type="number"/>
+        <property name="height" value="453" type="number"/>
+      </window>
+      <window name="groupTiao" desc="" type="com.easyegret.ui.Group" template="false">
+        <property name="showBg" value="false" type="boolean"/>
+        <property name="border" value="false" type="boolean"/>
+        <property name="x" value="418" type="number"/>
+        <property name="y" value="32" type="number"/>
+        <property name="width" value="19" type="number"/>
+        <property name="height" value="345" type="number"/>
+        <window name="imgTiaoDi" desc="" type="com.easyegret.ui.Image" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\6_2.png" type="bitmapdata"/>
+          <property name="y" value="-2.5" type="number"/>
+          <property name="width" value="19" type="number"/>
+          <property name="height" value="350" type="number"/>
+        </window>
+        <window name="imgTiao" desc="" type="com.easyegret.ui.Image" template="false">
+          <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\6_1.png" type="bitmapdata"/>
+          <property name="x" value="2" type="number"/>
+          <property name="width" value="15" type="number"/>
+          <property name="height" value="32" type="number"/>
+        </window>
+      </window>
+      <window name="groupClip" desc="" type="com.easyegret.ui.Group" template="false">
+        <property name="showBg" value="false" type="boolean"/>
+        <property name="clip" value="true" type="boolean"/>
+        <property name="border" value="false" type="boolean"/>
+        <property name="x" value="20" type="number"/>
+        <property name="y" value="52" type="number"/>
+        <property name="width" value="390" type="number"/>
+        <property name="height" value="345" type="number"/>
+        <window name="groupContent" desc="" type="com.easyegret.ui.Group" template="false">
+          <property name="showBg" value="false" type="boolean"/>
+          <property name="border" value="false" type="boolean"/>
+          <property name="width" value="390" type="number"/>
+          <property name="height" value="345" type="number"/>
+        </window>
+      </window>
+    </window>
+    <window name="btnConfirm" desc="" type="com.easyegret.ui.Button" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_Confirm2.png" type="bitmapdata"/>
+      <property name="width" value="225" type="number"/>
+      <property name="height" value="68" type="number"/>
+      <property name="x" value="123" type="number"/>
+      <property name="y" value="410" type="number"/>
+    </window>
+  </window>
+  <resources/>
+</ui>

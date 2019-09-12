@@ -1,0 +1,7 @@
+{"texture":
+    {
+        "game_Stone0":{"x":171, "y":0, "w":411, "h":605},
+        "role2":{"x":0, "y":0, "w":170, "h":270}
+    },
+    "group":"PageGameUI"
+}

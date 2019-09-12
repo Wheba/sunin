@@ -1,0 +1,11 @@
+{
+"resources":[
+    {"name":"WinSendCouponEndUI_img","type":"image","url":"assets/ui/page/WinSendCouponEndUI_190425161506.png"},
+    {"name":"WinSendCouponEndUI_json","type":"json","url":"assets/ui/page/WinSendCouponEndUI_190425161506.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=190425161506"},
+    {"name":"frame3","type":"image","url":"assets/ui/page/frame3.png?ver=190425161506"}
+],
+"groups":[
+    {"name":"page_WinSendCouponEndUI","keys":"WinSendCouponEndUI_img,WinSendCouponEndUI_json,loadingBg,frame3"}
+]
+}

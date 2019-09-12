@@ -1,0 +1,18 @@
+<ui>
+  <window name="TempMusic" desc="" ui="template" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="123" type="number"/>
+    <property name="height" value="122" type="number"/>
+    <window name="imgMusic" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\music1.png" type="bitmapdata"/>
+      <property name="width" value="123" type="number"/>
+      <property name="height" value="122" type="number"/>
+      <property name="touchEnabled" value="true" type="boolean"/>
+    </window>
+  </window>
+  <resources>
+    <res id="music0">E:\items\2019\UI\375-苏宁游戏\切图\music0.png</res>
+    <res id="music1">E:\items\2019\UI\375-苏宁游戏\切图\music1.png</res>
+  </resources>
+</ui>

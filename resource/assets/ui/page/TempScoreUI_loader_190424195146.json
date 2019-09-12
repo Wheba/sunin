@@ -1,0 +1,10 @@
+{
+"resources":[
+    {"name":"TempScoreUI_img","type":"image","url":"assets/ui/page/TempScoreUI_190424195146.png"},
+    {"name":"TempScoreUI_json","type":"json","url":"assets/ui/page/TempScoreUI_190424195146.json"},
+    {"name":"game_Frame","type":"image","url":"assets/ui/page/game_Frame.png?ver=190424195146"}
+],
+"groups":[
+    {"name":"page_TempScoreUI","keys":"TempScoreUI_img,TempScoreUI_json,game_Frame"}
+]
+}

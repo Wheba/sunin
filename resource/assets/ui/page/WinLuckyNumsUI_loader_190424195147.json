@@ -1,0 +1,10 @@
+{
+"resources":[
+    {"name":"WinLuckyNumsUI_img","type":"image","url":"assets/ui/page/WinLuckyNumsUI_190424195147.png"},
+    {"name":"WinLuckyNumsUI_json","type":"json","url":"assets/ui/page/WinLuckyNumsUI_190424195147.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=190424195147"}
+],
+"groups":[
+    {"name":"page_WinLuckyNumsUI","keys":"WinLuckyNumsUI_img,WinLuckyNumsUI_json,loadingBg"}
+]
+}

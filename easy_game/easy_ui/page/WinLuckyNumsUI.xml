@@ -1,0 +1,52 @@
+<ui>
+  <window name="WinLuckyNumsUI" desc="" ui="win" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="569" type="number"/>
+    <property name="height" value="580" type="number"/>
+    <window name="imgBg" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\loadingBg.jpg" type="bitmapdata"/>
+      <property name="x" value="-90.5" type="number"/>
+      <property name="y" value="-463" type="number"/>
+      <property name="width" value="750" type="number"/>
+      <property name="height" value="1506" type="number"/>
+    </window>
+    <window name="groupFrame" desc="" type="com.easyegret.ui.Group" template="false">
+      <property name="showBg" value="false" type="boolean"/>
+      <property name="border" value="false" type="boolean"/>
+      <property name="width" value="569" type="number"/>
+      <property name="height" value="378" type="number"/>
+      <window name="imgFrame" desc="" type="com.easyegret.ui.Image" template="false">
+        <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\frame2.png" type="bitmapdata"/>
+        <property name="width" value="569" type="number"/>
+        <property name="height" value="378" type="number"/>
+      </window>
+      <window name="imgTishi" desc="" type="com.easyegret.ui.Image" template="false">
+        <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\4_1.png" type="bitmapdata"/>
+        <property name="x" value="78.5" type="number"/>
+        <property name="y" value="123" type="number"/>
+        <property name="width" value="412" type="number"/>
+        <property name="height" value="132" type="number"/>
+      </window>
+    </window>
+    <window name="btnBack" desc="" type="com.easyegret.ui.Button" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_Back2.png" type="bitmapdata"/>
+      <property name="width" value="181" type="number"/>
+      <property name="height" value="55" type="number"/>
+      <property name="x" value="50" type="number"/>
+      <property name="y" value="460" type="number"/>
+    </window>
+    <window name="btnShare" desc="" type="com.easyegret.ui.Button" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\btn_Share.png" type="bitmapdata"/>
+      <property name="width" value="180" type="number"/>
+      <property name="height" value="55" type="number"/>
+      <property name="x" value="340" type="number"/>
+      <property name="y" value="460" type="number"/>
+    </window>
+  </window>
+  <resources>
+    <res id="2_1">E:\items\2019\UI\375-苏宁游戏\切图\2_1.png</res>
+    <res id="2_2">E:\items\2019\UI\375-苏宁游戏\切图\2_2.png</res>
+    <res id="loadingBg" merger="false">E:\items\2019\UI\375-苏宁游戏\切图\loadingBg.jpg</res>
+  </resources>
+</ui>

@@ -1,0 +1,14 @@
+<ui>
+  <window name="TempObstacleUI" desc="" ui="template" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <window name="imgObstacle" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\game_Stone1.png" type="bitmapdata"/>
+      <property name="x" value="18.5" type="number"/>
+      <property name="y" value="19" type="number"/>
+      <property name="width" value="63" type="number"/>
+      <property name="height" value="62" type="number"/>
+    </window>
+  </window>
+  <resources/>
+</ui>

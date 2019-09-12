@@ -1,0 +1,62 @@
+<ui>
+  <window name="LoadMianUI" desc="" ui="loadingmain" type="com.easyegret.ui.Group" template="false">
+    <property name="bgColor" value="0x0" type="int16"/>
+    <property name="clip" value="true" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="750" type="number"/>
+    <property name="height" value="1206" type="number"/>
+    <property name="topEnabled" value="true" type="boolean"/>
+    <property name="bottomEnabled" value="true" type="boolean"/>
+    <property name="leftEnabled" value="true" type="boolean"/>
+    <property name="rightEnabled" value="true" type="boolean"/>
+    <window name="imgBg" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\loadingBg.jpg" type="bitmapdata"/>
+      <property name="y" value="-150" type="number"/>
+      <property name="width" value="750" type="number"/>
+      <property name="height" value="1506" type="number"/>
+    </window>
+    <window name="groupMiddle" desc="" type="com.easyegret.ui.Group" template="false">
+      <property name="showBg" value="false" type="boolean"/>
+      <property name="border" value="false" type="boolean"/>
+      <property name="x" value="177.5" type="number"/>
+      <property name="y" value="319" type="number"/>
+      <property name="width" value="403" type="number"/>
+      <property name="height" value="408" type="number"/>
+      <property name="horizontalEnabled" value="true" type="boolean"/>
+      <property name="horizontalCenter" value="4" type="number"/>
+      <property name="verticalEnabled" value="true" type="boolean"/>
+      <property name="verticalCenter" value="-80" type="number"/>
+      <window name="imgQ1" desc="" type="com.easyegret.ui.Image" template="false">
+        <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\loading_4.png" type="bitmapdata"/>
+        <property name="width" value="403" type="number"/>
+        <property name="height" value="408" type="number"/>
+      </window>
+      <window name="imgQ2" desc="" type="com.easyegret.ui.Image" template="false">
+        <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\loading_3.png" type="bitmapdata"/>
+        <property name="x" value="27" type="number"/>
+        <property name="y" value="30" type="number"/>
+        <property name="width" value="349" type="number"/>
+        <property name="height" value="348" type="number"/>
+      </window>
+      <window name="imgLoading" desc="" type="com.easyegret.ui.Image" template="false">
+        <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\loading_2.png" type="bitmapdata"/>
+        <property name="x" value="117" type="number"/>
+        <property name="y" value="186.5" type="number"/>
+        <property name="width" value="169" type="number"/>
+        <property name="height" value="35" type="number"/>
+      </window>
+      <window name="imgRole" desc="" type="com.easyegret.ui.Image" template="false">
+        <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\role.png" type="bitmapdata"/>
+        <property name="x" value="84" type="number"/>
+        <property name="y" value="-60" type="number"/>
+        <property name="width" value="632" type="number"/>
+        <property name="height" value="397" type="number"/>
+        <property name="scaleX" value="0.32" type="number"/>
+        <property name="scaleY" value="0.32" type="number"/>
+      </window>
+    </window>
+  </window>
+  <resources>
+    <res id="loadingBg" merger="false">E:\items\2019\UI\375-苏宁游戏\切图\loadingBg.jpg</res>
+  </resources>
+</ui>

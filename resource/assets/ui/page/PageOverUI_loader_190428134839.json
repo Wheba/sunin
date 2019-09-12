@@ -1,0 +1,10 @@
+{
+"resources":[
+    {"name":"PageOverUI_img","type":"image","url":"assets/ui/page/PageOverUI_190428134839.png"},
+    {"name":"PageOverUI_json","type":"json","url":"assets/ui/page/PageOverUI_190428134839.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=190428134839"}
+],
+"groups":[
+    {"name":"page_PageOverUI","keys":"PageOverUI_img,PageOverUI_json,loadingBg"}
+]
+}

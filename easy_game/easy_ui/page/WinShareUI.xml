@@ -1,0 +1,20 @@
+<ui>
+  <window name="WinShareUI" desc="" ui="win" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="55" type="number"/>
+    <property name="height" value="122" type="number"/>
+    <window name="groupTouch" desc="" type="com.easyegret.ui.Group" template="false">
+      <property name="border" value="false" type="boolean"/>
+      <property name="x" value="-22.5" type="number"/>
+      <property name="y" value="11" type="number"/>
+      <property name="alpha" value="0" type="number"/>
+    </window>
+    <window name="imgArrow" desc="" type="com.easyegret.ui.Image" template="false">
+      <property name="texture" value="E:\items\2019\UI\375-苏宁游戏\切图\arrow.png" type="bitmapdata"/>
+      <property name="width" value="55" type="number"/>
+      <property name="height" value="122" type="number"/>
+    </window>
+  </window>
+  <resources/>
+</ui>

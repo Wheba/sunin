@@ -1,0 +1,62 @@
+<ui>
+  <window name="TempRankUI" desc="" ui="template" type="com.easyegret.ui.Group" template="false">
+    <property name="showBg" value="false" type="boolean"/>
+    <property name="clip" value="true" type="boolean"/>
+    <property name="border" value="false" type="boolean"/>
+    <property name="width" value="400" type="number"/>
+    <property name="height" value="45" type="number"/>
+    <window name="groupMove" desc="" type="com.easyegret.ui.Group" template="false">
+      <property name="border" value="false" type="boolean"/>
+      <property name="width" value="400" type="number"/>
+      <property name="height" value="45" type="number"/>
+      <property name="topEnabled" value="true" type="boolean"/>
+      <property name="bottomEnabled" value="true" type="boolean"/>
+      <property name="leftEnabled" value="true" type="boolean"/>
+      <property name="rightEnabled" value="true" type="boolean"/>
+      <property name="alpha" value="0" type="number"/>
+    </window>
+    <window name="labelNo" desc="" type="com.easyegret.ui.Label" template="false">
+      <property name="text" value="04" type="string"/>
+      <property name="fontSize" value="30" type="int"/>
+      <property name="color" value="0xffffff" type="int16"/>
+      <property name="hAlign" value="center" type="array_string"/>
+      <property name="autoSize" value="false" type="boolean"/>
+      <property name="width" value="80" type="number"/>
+      <property name="height" value="45" type="number"/>
+      <property name="showBg" value="false" type="boolean"/>
+      <property name="border" value="false" type="boolean"/>
+    </window>
+    <window name="labelScore" desc="" type="com.easyegret.ui.Label" template="false">
+      <property name="text" value="800" type="string"/>
+      <property name="fontSize" value="30" type="int"/>
+      <property name="color" value="0xffffff" type="int16"/>
+      <property name="hAlign" value="center" type="array_string"/>
+      <property name="autoSize" value="false" type="boolean"/>
+      <property name="width" value="120" type="number"/>
+      <property name="height" value="45" type="number"/>
+      <property name="x" value="280" type="number"/>
+      <property name="topEnabled" value="true" type="boolean"/>
+      <property name="bottomEnabled" value="true" type="boolean"/>
+      <property name="rightEnabled" value="true" type="boolean"/>
+      <property name="showBg" value="false" type="boolean"/>
+      <property name="border" value="false" type="boolean"/>
+    </window>
+    <window name="labelMember" desc="" type="com.easyegret.ui.Label" template="false">
+      <property name="text" value="70300056865" type="string"/>
+      <property name="fontSize" value="30" type="int"/>
+      <property name="color" value="0xffffff" type="int16"/>
+      <property name="hAlign" value="center" type="array_string"/>
+      <property name="autoSize" value="false" type="boolean"/>
+      <property name="width" value="200" type="number"/>
+      <property name="height" value="45" type="number"/>
+      <property name="x" value="80" type="number"/>
+      <property name="leftEnabled" value="true" type="boolean"/>
+      <property name="left" value="80" type="number"/>
+      <property name="rightEnabled" value="true" type="boolean"/>
+      <property name="right" value="120" type="number"/>
+      <property name="showBg" value="false" type="boolean"/>
+      <property name="border" value="false" type="boolean"/>
+    </window>
+  </window>
+  <resources/>
+</ui>

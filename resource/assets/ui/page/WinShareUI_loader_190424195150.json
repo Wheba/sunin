@@ -1,0 +1,9 @@
+{
+"resources":[
+    {"name":"WinShareUI_img","type":"image","url":"assets/ui/page/WinShareUI_190424195150.png"},
+    {"name":"WinShareUI_json","type":"json","url":"assets/ui/page/WinShareUI_190424195150.json"}
+],
+"groups":[
+    {"name":"page_WinShareUI","keys":"WinShareUI_img,WinShareUI_json"}
+]
+}

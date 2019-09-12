@@ -1,0 +1,11 @@
+{
+"resources":[
+    {"name":"PageCouponUI_img","type":"image","url":"assets/ui/page/PageCouponUI_190424195144.png"},
+    {"name":"PageCouponUI_json","type":"json","url":"assets/ui/page/PageCouponUI_190424195144.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=190424195144"},
+    {"name":"role","type":"image","url":"assets/ui/page/role.png?ver=190424195144"}
+],
+"groups":[
+    {"name":"page_PageCouponUI","keys":"PageCouponUI_img,PageCouponUI_json,loadingBg,role"}
+]
+}

@@ -1,0 +1,68 @@
+<projects>
+  <name>375_Suning</name>
+  <code_dir>E:\items\2019\375_Suning</code_dir>
+  <project_dir>E:\items\2019\375_Suning\easy_game\easy_ui</project_dir>
+  <easygame_dir>E:\items\2019\375_Suning\easy_game</easygame_dir>
+  <assets_dir>E:\items\2019\UI\375-苏宁游戏\切图</assets_dir>
+  <code_module>suning</code_module>
+  <compress_enable>true</compress_enable>
+  <compress_param></compress_param>
+  <framerate>60</framerate>
+  <data_gen_excel_dir>E:\items\2019\375_Suning\easy_game\easy_data</data_gen_excel_dir>
+  <data_gen_excel_setting>E:\items\2019\375_Suning\easy_game\easy_data\setting.xlsx</data_gen_excel_setting>
+  <data_gen_protocol_xml_dir>E:\items\2019\375_Suning\easy_game\easy_protocol</data_gen_protocol_xml_dir>
+  <data_gen_go_src_dir></data_gen_go_src_dir>
+  <data_gen_go_project_name></data_gen_go_project_name>
+  <data_gen_go_client_header>network.RequestHeader</data_gen_go_client_header>
+  <data_gen_go_server_header>network.ResultHeader</data_gen_go_server_header>
+  <data_gen_server_json_data_dir></data_gen_server_json_data_dir>
+  <publish_java_home></publish_java_home>
+  <publish_ant_home></publish_ant_home>
+  <publish_app_icon></publish_app_icon>
+  <publish_app_title></publish_app_title>
+  <publish_app_version_code>1</publish_app_version_code>
+  <publish_app_version_name>0.0.1</publish_app_version_name>
+  <publish_app_portrait>true</publish_app_portrait>
+  <publish_app_project_copy></publish_app_project_copy>
+  <publish_android_support></publish_android_support>
+  <publish_android_sdk></publish_android_sdk>
+  <publish_android_keystore></publish_android_keystore>
+  <publish_android_keystore_pwd></publish_android_keystore_pwd>
+  <publish_android_keystore_alias></publish_android_keystore_alias>
+  <publish_android_keystore_alias_pwd></publish_android_keystore_alias_pwd>
+  <guide_sence_width>600</guide_sence_width>
+  <guide_sence_height>800</guide_sence_height>
+  <is_res_random>true</is_res_random>
+  <rootDirRes>null</rootDirRes>
+  <publish_android_pkt_selected>org.egret.java.suning</publish_android_pkt_selected>
+  <publish_android_pkt_datas>org.egret.java.suning</publish_android_pkt_datas>
+  <resources>
+    <res id="game_Stone1" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\game_Stone1.png</res>
+    <res id="game_Stone2" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\game_Stone2.png</res>
+    <res id="gameBigBallTxt1" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBigBallTxt1.png</res>
+    <res id="gameBigBallTxt2" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBigBallTxt2.png</res>
+    <res id="gameBigBallTxt3" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBigBallTxt3.png</res>
+    <res id="lucky0" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\lucky0.png</res>
+    <res id="lucky1" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\lucky1.png</res>
+    <res id="Coupon1" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\Coupon1.png</res>
+    <res id="Coupon2" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\Coupon2.png</res>
+    <res id="Coupon3" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\Coupon3.png</res>
+    <res id="gameBallTxt0" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt0.png</res>
+    <res id="gameBallTxt1_1" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt1_1.png</res>
+    <res id="gameBallTxt1_2" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt1_2.png</res>
+    <res id="gameBallTxt1_3" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt1_3.png</res>
+    <res id="gameBallTxt1_4" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt1_4.png</res>
+    <res id="gameBallTxt1_5" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt1_5.png</res>
+    <res id="gameBallTxt2_1" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt2_1.png</res>
+    <res id="gameBallTxt2_2" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt2_2.png</res>
+    <res id="gameBallTxt2_3" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt2_3.png</res>
+    <res id="gameBallTxt2_4" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt2_4.png</res>
+    <res id="gameBallTxt3_1" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt3_1.png</res>
+    <res id="gameBallTxt3_2" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt3_2.png</res>
+    <res id="gameBallTxt3_3" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt3_3.png</res>
+    <res id="gameBallTxt3_4" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt3_4.png</res>
+    <res id="gameBallTxt3_5" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt3_5.png</res>
+    <res id="gameBallTxt3_6" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt3_6.png</res>
+    <res id="gameBallTxt3_7" merge="true">E:\items\2019\UI\375-苏宁游戏\切图\gameBallTxt3_7.png</res>
+  </resources>
+</projects>

@@ -1,0 +1,12 @@
+{
+"resources":[
+    {"name":"WinRankUI_img","type":"image","url":"assets/ui/page/WinRankUI_19042605056.png"},
+    {"name":"WinRankUI_json","type":"json","url":"assets/ui/page/WinRankUI_19042605056.json"},
+    {"name":"loadingBg","type":"image","url":"assets/ui/page/loadingBg.jpg?ver=19042605056"},
+    {"name":"frame1","type":"image","url":"assets/ui/page/frame1.png?ver=19042605056"},
+    {"name":"btn_Back","type":"image","url":"assets/ui/page/btn_Back.png?ver=19042605056"}
+],
+"groups":[
+    {"name":"page_WinRankUI","keys":"WinRankUI_img,WinRankUI_json,loadingBg,frame1,btn_Back"}
+]
+}

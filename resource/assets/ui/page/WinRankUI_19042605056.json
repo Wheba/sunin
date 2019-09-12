@@ -1,0 +1,7 @@
+{"texture":
+    {
+        "rankHead":{"x":0, "y":0, "w":353, "h":29},
+        "rankTitle":{"x":354, "y":0, "w":148, "h":39}
+    },
+    "group":"WinRankUI"
+}

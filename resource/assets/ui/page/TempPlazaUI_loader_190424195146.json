@@ -1,0 +1,9 @@
+{
+"resources":[
+    {"name":"TempPlazaUI_img","type":"image","url":"assets/ui/page/TempPlazaUI_190424195146.png"},
+    {"name":"TempPlazaUI_json","type":"json","url":"assets/ui/page/TempPlazaUI_190424195146.json"}
+],
+"groups":[
+    {"name":"page_TempPlazaUI","keys":"TempPlazaUI_img,TempPlazaUI_json"}
+]
+}

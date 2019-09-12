@@ -1,0 +1,9 @@
+{
+"resources":[
+    {"name":"suning_common_img","type":"image","url":"assets/ui/suning/suning_190425204356.png"},
+    {"name":"suning_common_json","type":"json","url":"assets/ui/suning/suning_190425204356.json"}
+],
+"groups":[
+    {"name":"suning_common_group","keys":"suning_common_img,suning_common_json"}
+]
+}

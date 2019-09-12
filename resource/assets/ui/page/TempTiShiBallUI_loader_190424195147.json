@@ -1,0 +1,9 @@
+{
+"resources":[
+    {"name":"TempTiShiBallUI_img","type":"image","url":"assets/ui/page/TempTiShiBallUI_190424195147.png"},
+    {"name":"TempTiShiBallUI_json","type":"json","url":"assets/ui/page/TempTiShiBallUI_190424195147.json"}
+],
+"groups":[
+    {"name":"page_TempTiShiBallUI","keys":"TempTiShiBallUI_img,TempTiShiBallUI_json"}
+]
+}

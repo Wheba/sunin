@@ -1,0 +1,10 @@
+{
+"resources":[
+    {"name":"WinPlazaUI_img","type":"image","url":"assets/ui/page/WinPlazaUI_190424195147.png"},
+    {"name":"WinPlazaUI_json","type":"json","url":"assets/ui/page/WinPlazaUI_190424195147.json"},
+    {"name":"frame3","type":"image","url":"assets/ui/page/frame3.png?ver=190424195147"}
+],
+"groups":[
+    {"name":"page_WinPlazaUI","keys":"WinPlazaUI_img,WinPlazaUI_json,frame3"}
+]
+}

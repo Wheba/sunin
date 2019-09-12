@@ -1,0 +1,9 @@
+{
+"resources":[
+    {"name":"TempMusic_img","type":"image","url":"assets/ui/page/TempMusic_190424195146.png"},
+    {"name":"TempMusic_json","type":"json","url":"assets/ui/page/TempMusic_190424195146.json"}
+],
+"groups":[
+    {"name":"page_TempMusic","keys":"TempMusic_img,TempMusic_json"}
+]
+}
